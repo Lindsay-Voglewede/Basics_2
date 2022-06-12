@@ -1,0 +1,40 @@
+/*User inputs 2 numbers, program outputs results for arithmetic operation: +,-,*,/,% using ONLY INTEGERS*/
+////////////////////////////
+/// By Lindsay Voglewede ///
+////////////////////////////
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int a=0;
+    int b=0;
+    int plus=0;
+    int minus=0;
+    int mult=0;
+    int div=0;
+    int mod=0;
+
+    //INPUTS (a=9, b=3)
+    printf("Enter first number\n");
+    scanf("%d",&a);
+    printf("Enter first number\n");
+    scanf("%d",&b);
+
+    plus=a+b;
+    minus=a-b;
+    mult=a*b;
+    div=a/b;
+    mod=a%b;
+
+
+    //OUTPUTS
+    printf("\t Addition is= %d\n",plus);        //= 12
+    printf("\t Substracting is= %d\n",minus);   //=6
+    printf("\t Multiplication is= %d\n",mult);  //=27
+    printf("\t Division is= %d\n",div);         //=3
+    printf("\t Modulus is= %d\n",mod);          //=0
+
+    return 0;
+}
